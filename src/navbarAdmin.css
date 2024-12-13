@@ -1,0 +1,70 @@
+.nav-container-admin {
+  background-color: rgb(79, 79, 240);
+  border: 2px solid rgb(38, 38, 168);
+  padding: 10px 20px;
+}
+
+.nav-list-admin {
+  width: 100%;
+  list-style-type: none;
+}
+
+.logo-item {
+  margin-right: auto;
+}
+
+.logo-img {
+  height: 40px; 
+}
+
+.nav-admin {
+  background-color: rgb(234, 234, 234);
+  padding: 10px 20px;
+  color: rgb(38, 38, 168);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 30px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: rgb(38, 38, 168);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: gray; /* warna saat hover */
+}
+
+.login-item {
+  margin-left: auto;
+}
+
+.login-btn-admin {
+  background-color: #007BFF; 
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.login-btn:hover {
+  background-color: #0056b3; 
+} 

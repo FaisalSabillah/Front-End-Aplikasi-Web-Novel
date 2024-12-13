@@ -1,0 +1,73 @@
+.dashboard {
+  text-align: center;
+  background-color: rgb(234, 234, 234);
+  
+}
+.heading {
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+.novel {
+  background-color: rgb(234, 234, 234);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+ 
+}
+.novel-item {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgb(247, 247, 247);
+  color: rgb(38, 38, 168);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1px;
+  overflow: hidden;
+  transition: transform 0.2s;
+  border: 1px solid;
+  border-color: rgb(38, 38, 168);
+}
+
+.novel-item:hover {
+  transform: translateY(-5px);
+}
+
+.novel-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.novel-details {
+  padding: 20px;
+}
+
+.novel-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.deskripsi {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.no-novels {
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .grid-container {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+  }
+}

@@ -1,0 +1,65 @@
+
+.genre-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.Genre {
+    padding: 20px;
+    text-align: center;
+    height: 80%;
+  }
+  
+  .Genre h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+
+  .genreBtn {
+    background-color: #007BFF; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .genreBtn:hover {
+    background-color: #0056b3; 
+    color: gray;
+  }
+  
+  .GenreList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .genreBtn {
+    display: inline-block;
+    margin: 10px;
+  }
+
+  @media (max-width: 1200px) {
+    .GenreList {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+@media (max-width: 900px) {
+      .GenreList {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 600px) {
+      .GenreList {
+        grid-template-columns: 1fr; 
+    }
+}

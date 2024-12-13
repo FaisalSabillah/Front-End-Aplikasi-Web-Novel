@@ -1,0 +1,93 @@
+
+.Genre-admin- {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.Genre-admin {
+    padding: 20px;
+    text-align: center;
+    height: 80%;
+  }
+  
+  .Genre-admin h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+
+  .genre-item-admin {
+    background-color: #007BFF; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .genreBtn-admin:hover {
+    background-color: #0056b3; 
+    color: gray;
+  }
+  
+  .genre-item-admin {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .genreBtn-admin {
+    display: inline-block;
+    margin: 10px;
+  }
+
+  @media (max-width: 1200px) {
+    .GenreList {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+@media (max-width: 900px) {
+      .GenreList {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 600px) {
+      .GenreList {
+        grid-template-columns: 1fr; 
+    }
+}
+
+
+  .add-genre-btn-admin {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .add-genre-btn-admin:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+  }
+  
+  .add-genre-btn-admin:active {
+    background-color: #1e7e34;
+  }
+
+  footer {
+    margin-top: auto;
+}
+
+  
